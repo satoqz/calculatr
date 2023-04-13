@@ -3,7 +3,7 @@ pub fn add(x: i32, y: i32) -> i32 {
 }
 
 pub fn subtract(x: i32, y: i32) -> i32 {
-    unimplemented!()
+    x - y
 }
 
 #[test]
@@ -12,4 +12,6 @@ fn test_add() {
 }
 
 #[test]
-fn test_subtract() {}
+fn test_subtract() {
+    assert_eq!(subtract(1, 1), 0);
+}
